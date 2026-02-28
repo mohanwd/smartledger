@@ -5,99 +5,146 @@ body {
   color: #222;
 }
 
-.hero-section {
-  height: 100vh;
-  background: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+header {
+  width: 100vw;
+  background: rgba(255,255,255,0.97);
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+  z-index: 9;
+  position: sticky;
+  top: 0;
 }
-
 .navbar {
   display: flex;
   align-items: center;
-  padding: 20px;
-  background: rgba(255,255,255,0.88);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.10);
+  justify-content: space-between;
+  padding: 14px 20px;
+  flex-wrap: wrap;
 }
-
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 54px;
+  height: 54px;
   object-fit: contain;
   border-radius: 12px;
-  margin-right: 18px;
+  margin-right: 14px;
+  background: #e9f7f3;
+  border: 2px solid #d4e9de;
 }
 .company-title h1 {
-  margin: 0 0 2px 0;
+  margin: 0 0 1px 0;
   font-weight: 700;
   color: #247a44;
+  font-size: 2rem;
 }
 .company-title p {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1.01rem;
   color: #066fa6;
 }
+.nav-links {
+  display: flex;
+  gap: 12px;
+}
 .nav-link {
-  margin-left: auto;
-  padding: 11px 28px;
+  padding: 11px 24px;
   color: #fff;
   background: #247a44;
-  border-radius: 24px;
+  border-radius: 23px;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
-  transition: background 0.2s;
+  transition: background 0.2s, color 0.2s;
+  margin-left: 6px;
 }
 .nav-link:hover {
   background: #066fa6;
+  color: #fffae3;
+}
+.whatsapp-btn {
+  display: flex;
+  align-items: center;
+  background: #25D366;
+  color: #fff;
+  padding: 10px 16px 10px 14px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  min-width: 170px;
+  margin-left: 12px;
+  box-shadow: 0 2px 12px rgba(37,211,102,0.10);
+  transition: background 0.2s;
+}
+.whatsapp-btn:hover {
+  background: #1da851;
+}
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.hero-section {
+  min-height: 73vh;
+  width: 100%;
+  background: linear-gradient(rgba(35,128,85,0.16), rgba(6,111,166,0.14)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 .hero-content {
   max-width: 440px;
-  background: rgba(255,255,255,0.92);
-  padding: 40px 26px;
+  background: rgba(255,255,255,0.97);
+  padding: 42px 28px 36px 20px;
   border-radius: 35px 5px 35px 5px;
-  margin: 72px 18px 72px 18px;
-  align-self: flex-start;
-  box-shadow: 0 6px 30px rgba(64,64,106,0.10);
+  margin: 84px 22px 74px 24px;
+  box-shadow: 0 6px 30px rgba(64,64,106,0.13);
 }
 .hero-content h2 {
-  color: #247a44;
-  font-size: 2.5rem;
+  color: #066fa6;
+  font-size: 2.65rem;
   margin-bottom: 11px;
+  letter-spacing: -0.5px;
 }
 .hero-content p {
   margin-bottom: 32px;
-  font-size: 1.1rem;
+  font-size: 1.17rem;
+  color: #1d2326;
 }
 .cta-btn {
-  border: none;
+  display: inline-block;
   background: #066fa6;
   color: #fff;
-  padding: 16px 36px;
-  border-radius: 22px;
-  font-size: 1.1rem;
+  padding: 15px 34px;
+  border-radius: 21px;
+  font-size: 1.08rem;
   text-decoration: none;
   font-weight: 600;
-  cursor: pointer;
   transition: background 0.2s;
+  box-shadow: 0 2px 18px rgba(6,111,166,0.12);
 }
 .cta-btn:hover {
-  background: #218f5a;
+  background: #247a44;
 }
 .services-section {
-  padding: 54px 8vw 38px 8vw;
+  padding: 60px 8vw 40px 8vw;
   background: #fff url('https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
   min-height: 97vh;
 }
+.services-section h2 {
+  text-align: left;
+  color: #066fa6;
+  font-size: 2.1rem;
+  margin-bottom: 26px;
+  letter-spacing: -0.5px;
+}
 .services-list {
-  background: rgba(255,255,255,0.91);
+  background: rgba(255,255,255,0.92);
   border-radius: 16px;
   padding: 25px 22px 23px 22px;
   list-style: none;
-  font-size: 1.09rem;
+  font-size: 1.13rem;
   margin-bottom: 38px;
-  box-shadow: 0 4px 14px rgba(64,64,106,0.08);
+  box-shadow: 0 4px 14px rgba(64,64,106,0.11);
 }
 .services-list li {
   padding: 10px 0;
@@ -111,7 +158,7 @@ body {
   color: #fff;
   border-radius: 16px;
   padding: 23px 24px 21px 24px;
-  box-shadow: 0 3px 11px rgba(64,64,106,0.10);
+  box-shadow: 0 3px 11px rgba(64,64,106,0.11);
   margin-bottom: 24px;
 }
 .contact-details h3 {
@@ -127,7 +174,7 @@ body {
 }
 .contact-details li {
   margin-bottom: 9px;
-  font-size: 1.07rem;
+  font-size: 1.09rem;
 }
 footer {
   text-align: center;
@@ -136,24 +183,32 @@ footer {
   color: #fff;
   font-size: 1rem;
 }
-@media (max-width: 740px) {
+@media (max-width: 760px) {
   .hero-content, .services-section {
-    margin: 22px 4vw;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    margin: 21px 2vw 20px 2vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
   .navbar {
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 4vw;
+    gap: 8px;
+    padding: 11px 2vw;
   }
-  .nav-link {
-    margin-left: 0;
-    margin-top: 10px;
+  .nav-links {
     width: 100%;
+    justify-content: flex-start;
+  }
+  .nav-link, .whatsapp-btn {
+    width: 95%;
+    box-sizing: border-box;
+    margin: 6px 0;
     text-align: center;
   }
   .logo {
     margin-bottom: 10px;
+  }
+  .hero-section {
+    min-height: 69vh;
   }
 }
